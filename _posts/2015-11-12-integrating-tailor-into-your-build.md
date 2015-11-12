@@ -12,21 +12,21 @@ Installation is very easy, and if you're working on a Mac, you can even use [Hom
 
 Once you have it on your machine, you can analyze any Swift file with the following command via the command line:
 
-```bash  
+{% highlight bash %}
 $ tailor foo.swift
-```
+{% endhighlight %}
 
 Or analyze all Swift files in a directory:
 
-```bash  
+{% highlight bash %}
 $ tailor path/to/directory/
-```
+{% endhighlight %}
 
 Easy! Tailor uses a set of pre-defined rules for analyzing your code. These rules are described [here](https://github.com/sleekbyte/tailor/wiki/Rules). Any of these can be disabled if you don't want Tailor to check for them. For example, to disable the `brace-style` rule, you can use the following:
 
-```bash  
+{% highlight bash %}
 $ tailor --except=brace-style foo.swift
-```
+{% endhighlight %}
 
 This is great if you don't agree with a certain rule. Unfortunately, there is no way to specify your own rules right now, but that is a feature that could come later on.
 
@@ -36,29 +36,29 @@ Now that you know how Tailor works, it's time to let it work its magic on your X
 
 Tailor makes integration easy, but you'll have to do the customization yourself. To start, use the tool that tailor provides:
 
-```bash  
+{% highlight bash %}
 $ tailor --xcode /path/to/foo.xcodeproj/
-```
+{% endhighlight %}
 
 This will add a custom script to the end of your Xcode build. If you open up this project in Xcode and go to the `.xcodeproj` file, you'll see this script under the name "Tailor". Currently, you'll see that the script simply does something similar to the following:
 
-```bash  
+{% highlight bash %}
 /usr/local/bin/tailor
-```
+{% endhighlight %}
 
 This will run Tailor on all of the swift files in your project without any options. This is a great starting point, but we often want ignore some rules or add other options. You can do this by modifying the script yourself.
 
-```bash
+{% highlight bash %}
 /usr/local/bin/tailor --except=brace-style
-```
+{% endhighlight %}
 
 It looks nearly identical to our command-line commands, which makes it easy to customize. Once you have it the way you like it, try to build your project! You'll notice the custom script running toward the end of your build, and if any warnings occur they will show in Xcode. It will even highlight the line that causes the warning in the file view, just like default Xcode warnings.
 
 Often, we want these warnings to fail the build so that we can consistently enforce the style. This is also easily done with Tailor. Simply changing the severity level from warning to error will make sure that the build fails. Add the following to your Xcode build script:
 
-```bash  
+{% highlight bash %}
 /usr/local/bin/tailor --max-severity=error
-```
+{% endhighlight %}
 
 Now, if you build your app, you'll notice many of your warnings turn into errors, along with a build failure (that is - if you actually have violations in your code. If you get no errors, then you've been following the Swift style guide very well!).
 
@@ -70,11 +70,11 @@ Now that we have Tailor working for our project locally, we want to make sure th
 
 First things first, modify your `.travis.yml` file to have the build server install Tailor before building your project. Add the following lines:
 
-```yaml
+{% highlight yaml %}
 before_install:
   - brew update
   - brew install tailor
-```
+{% endhighlight %}
 
 This will install Tailor on the Travis build machine before it pulls and builds your code.
 
@@ -82,10 +82,10 @@ If you try pushing these changes now, Tailor will be able to run successfully! T
 
 Create a new file called `.tailor.yml` in the top-level directory of your project (same level as the `.travis.yml` file). Then, add the following lines to it:
 
-```yaml
+{% highlight yaml %}
 exclude:
   - Pods/
-```
+{% endhighlight %}
 
 You can exclude certain files or directories from being analyzed. You'll definitely want to at least have the Pods directory in this list, because many of these frameworks do not follow the style rules.
 
