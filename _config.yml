@@ -9,4 +9,4 @@ twitter_username: RohanNagar22
 github_username: RohanNagar
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
