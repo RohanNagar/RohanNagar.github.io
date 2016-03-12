@@ -1,12 +1,16 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-            <h3>OUR CLIENTS</h3>
-            {% for client in site.clients %}
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="{{ "/assets/img/clients/" | prepend: site.baseurl }}{{ client.img }}" class="img-responsive">
+            <h3>WHERE I'VE WORKED</h3>
+                <div class="col-md-4">
+                    <img src="{{ "/assets/img/clients/" | prepend: site.baseurl }}{{ "utaustin.png" }}" class="img-responsive">
                 </div>
-            {% endfor %}
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/cwrap -->
+                <div class="col-md-4">
+                    <img src="{{ "/assets/img/clients/" | prepend: site.baseurl }}{{ "mainstreethub.png" }}" class="img-responsive">
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ "/assets/img/clients/" | prepend: site.baseurl }}{{ "ebay.png" }}">
+                </div>
+        </div> <!--/row -->
+    </div> <!--/container -->
+</div> <!--/cwrap -->
