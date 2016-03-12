@@ -26,16 +26,18 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
   - title: facebook
-    url:
+    url: https://www.facebook.com/rnagar
   - title: twitter
-    url:
+    url: https://twitter.com/RohanNagar22
   - title: instagram
-    url:
-  - title: tumblr
-    url:
+    url: https://www.instagram.com/rnagar95
+  - title: linkedin
+    url: https://www.linkedin.com/in/rohannagar
+  - title: google-plus
+    url: https://plus.google.com/u/0/+RohanNagar22
+  - title: github
+    url: https://github.com/RohanNagar
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:

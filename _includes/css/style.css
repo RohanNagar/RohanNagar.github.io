@@ -211,6 +211,7 @@ a:focus {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
@@ -263,6 +264,10 @@ a:focus {
 
 .img-circle {
     border-radius: 50%;
+}
+
+.social-icons {
+		margin-left: auto;
 }
 
 .portfolio {
