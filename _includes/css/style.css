@@ -242,12 +242,18 @@ a:focus {
 #service {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #service i {
 	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
+}
+
+#service h3 {
+	margin-bottom: 20px;
 }
 
 /* Portfolio Wrap */
