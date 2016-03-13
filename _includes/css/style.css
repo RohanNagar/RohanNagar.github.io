@@ -226,6 +226,10 @@ a:focus {
 	margin-bottom: 25px;
 }
 
+.hline-dotted {
+	border-bottom: 2px dashed {{ site.colors.secondary }};
+}
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
@@ -404,8 +408,9 @@ a:focus {
 }
 
 .project {
-	margin-top: 50px;
-	margin-bottom: 30px;
+	overflow: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 
