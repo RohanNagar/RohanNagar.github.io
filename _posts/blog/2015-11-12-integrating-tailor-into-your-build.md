@@ -3,6 +3,8 @@ layout: post
 title: "Integrating Tailor into your Swift Project"
 date: 2015-11-12 00:15:00
 author: Rohan Nagar
+categories:
+  - blog
 ---
 
 Finally, we have a style-checker for our [Swift](https://developer.apple.com/swift/) projects (read: iOS and OS X applications). [Tailor](https://github.com/sleekbyte/tailor) is a command line tool for OS X, Linux, and Windows that analyzes your Swift source code and enforces the rules for the format of your code. This is similar to other tools like [checkstyle](https://github.com/checkstyle/checkstyle) for Java. In this post I will walk through using Tailor, integrating it into your Swift project through Xcode, and getting it to work in your build environments.
