@@ -373,6 +373,10 @@ a:focus {
 	background-color: {{ site.colors.secondary }};
 }
 
+.blog-preview {
+	font-size: 40px;
+}
+
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;
