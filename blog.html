@@ -4,10 +4,11 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="container mtb">
-    <div class="row centered">
+<div class="container mb">
+    <div class="row">
 
         <!-- BLOG POSTS -->
+        <div class="col-lg-8">
         {% for post in site.categories['blog'] %}
             <!-- Blog Post -->
             <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="ctitle">{{ post.title }}</h2></a>
@@ -17,7 +18,8 @@ permalink: /blog/
             <div class="hline"></div>
 
             <div class="spacing"></div>
-          {% endfor %}
+        {% endfor %}
 
+        </div>
     </div> <!--/row -->
 </div> <!--/container -->

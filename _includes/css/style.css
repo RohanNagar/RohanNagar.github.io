@@ -373,6 +373,10 @@ a:focus {
 	background-color: {{ site.colors.secondary }};
 }
 
+.wtitle {
+	color: white;
+}
+
 .blog-preview {
 	font-size: 40px;
 }
@@ -438,7 +442,7 @@ a:focus {
 #blue {
 	background: {{ site.colors.primary }};
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 25px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
@@ -471,7 +475,6 @@ a:focus {
 }
 
 .ctitle {
-	color: {{ site.colors.primary }};
 	font-weight: 700;
 	margin-bottom: 15px;
 }
