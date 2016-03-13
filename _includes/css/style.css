@@ -157,6 +157,20 @@ a:focus {
   border-color: {{ site.colors.primary }};
 }
 
+.btn-theme2 {
+  color: #fff;
+  border-color: {{ site.colors.secondary }};
+  margin: 4px;
+}
+.btn-theme2:hover,
+.btn-theme2:focus,
+.btn-theme2:active,
+.btn-theme2.active,
+.open .dropdown-toggle.btn-theme2 {
+  color: #fff;
+  border-color: white;
+}
+
 .dmbutton:hover,
 .dmbutton:active,
 .dmbutton:focus{
@@ -327,11 +341,11 @@ a:focus {
     background: url(../img/t-back.jpg) no-repeat center top;
     position: relative;
     margin-top: 0px;
-	padding-top:60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 375px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -361,6 +375,11 @@ a:focus {
 	margin-bottom: 40px;
 }
 
+.skill-group {
+	overflow: auto;
+	margin-bottom: 25px;
+}
+
 .skill {
 	float: left;
 	color: white;
@@ -368,9 +387,12 @@ a:focus {
 	border-radius: 10px;
 	line-height: 30px;
 	padding: 2px 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin: 5px;
 	background-color: {{ site.colors.secondary }};
+}
+
+.resume-button {
+
 }
 
 .wtitle {
