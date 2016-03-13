@@ -377,6 +377,22 @@ a:focus {
 	font-size: 40px;
 }
 
+.project {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.project-img-left {
+	float: left;
+	margin-right: 10px;
+}
+
+.project-img-right {
+	float: right;
+	margin-left: 10px;
+}
+
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;
