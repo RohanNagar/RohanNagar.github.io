@@ -427,7 +427,8 @@ a:focus {
 #footerwrap i {
 	font-size: 30px;
 	color: {{ site.colors.footer_content }};
-	padding-right: 25px;
+	padding-right: 12px;
+	padding-left: 12px;
 }
 
 #footerwrap i:hover {
