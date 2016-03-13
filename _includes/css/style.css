@@ -412,16 +412,19 @@ a:focus {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
+	color: {{ site.colors.link }};
 }
 
 .project-img-left {
 	float: left;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .project-img-right {
 	float: right;
 	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 /* clients logo */
