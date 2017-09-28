@@ -1,0 +1,20 @@
+<span class="reading-time" title="Estimated read time">
+    {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
+    {% if minutes == 0 %}
+    {% assign minutes = 1 %}
+    {% endif %}
+
+    {% if page.minutes %}
+        {% if page.minutes == 1%}
+            {{ page.minutes }} minute read
+        {% else %}
+            {{ page.minutes}} minutes read
+        {% endif %}
+    {% else %}
+        {% if minutes == 1%}
+            {{ minutes }} minute read
+        {% else %}
+            {{ minutes }} minutes read
+        {% endif %}
+    {% endif %}
+</span>
