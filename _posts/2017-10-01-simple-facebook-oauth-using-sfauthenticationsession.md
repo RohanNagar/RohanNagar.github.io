@@ -17,7 +17,7 @@ with an authentication URL
 The first one is simple enough, and for many applications you **will** want to use the SDK so that you can
 easily call other Facebook API methods from within your app. However, in some applications you may want
 to **only** get the token and then pass it to your backend that does all of the work interacting with
-Facebook. This is the model that my collegue and I use for [Pilot](https://github.com/SanctionCo/pilot-ios).
+Facebook. This is the model that my colleague and I use for [Pilot](https://github.com/SanctionCo/pilot-ios).
 For these situations, it doesn't make sense to import an entire SDK just for getting the OAuth token. And in
 fact, `SFAuthenticationSession` makes it dead simple to do this yourself.
 
