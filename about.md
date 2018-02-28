@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: about
 title: "About"
 author: "Rohan"
 permalink: /about/
