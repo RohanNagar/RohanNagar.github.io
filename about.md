@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: informational
 title: "About"
 author: "Rohan"
 permalink: /about/
