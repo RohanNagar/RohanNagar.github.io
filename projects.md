@@ -7,7 +7,6 @@ permalink: /projects/
 
 Here you can find all of the open source projects I work on. Feel free to contribute where you can!
 
-![Thunder](/assets/img/projects/thunder.png)
 # Thunder
 
 [Link to Project](https://www.github.com/RohanNagar/thunder)
