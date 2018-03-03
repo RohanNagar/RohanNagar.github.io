@@ -5,7 +5,7 @@ author: "Rohan"
 permalink: /projects/
 ---
 
-<img align="left" src="/assets/img/projects/thunder.png">
+<img align="right" src="/assets/img/projects/thunder.png">
 
 # Thunder
 
@@ -17,7 +17,7 @@ Soon, Thunder can serve as the user backend for any project and will be fully cu
 
 <hr>
 
-<img align="left" src="/assets/img/projects/lightning.png">
+<img align="right" src="/assets/img/projects/lightning.png">
 
 # Lightning
 
@@ -28,7 +28,7 @@ Lightning was built for Pilot, and has the potential to be expanded to include m
 
 <hr>
 
-<img align="left" src="/assets/img/projects/pilot.png">
+<img align="right" src="/assets/img/projects/pilot.png">
 
 # Pilot (iOS)
 
