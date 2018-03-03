@@ -5,9 +5,7 @@ author: "Rohan"
 permalink: /projects/
 ---
 
-Here you can find all of the open source projects I work on.
-
-<hr>
+<img align="left" src="/assets/img/projects/thunder.png">
 
 # Thunder
 
@@ -19,6 +17,8 @@ Soon, Thunder can serve as the user backend for any project and will be fully cu
 
 <hr>
 
+<img align="left" src="/assets/img/projects/lightning.png">
+
 # Lightning
 
 [Link to Project](https://www.github.com/RohanNagar/lightning)
@@ -27,6 +27,8 @@ Lightning is another REST API written in Java. Lightning interfaces with social 
 Lightning was built for Pilot, and has the potential to be expanded to include many other social platforms and other methods.
 
 <hr>
+
+<img align="left" src="/assets/img/projects/pilot.png">
 
 # Pilot (iOS)
 
