@@ -8,6 +8,7 @@ permalink: /projects/
 <img align="right" src="/assets/img/projects/thunder.png">
 
 # Thunder
+<a class="github-button" href="https://github.com/RohanNagar/thunder" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star RohanNagar/thunder on GitHub">Star</a>
 
 [Link to Project](https://www.github.com/RohanNagar/thunder)
 
