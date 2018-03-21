@@ -8,7 +8,7 @@ In many applications you write, you will want to connect to a user's Facebook ac
 create posts or read their information. The way to do this is with [OAuth 2](https://oauth.net/2/), which provides
 a way for Facebook to give your application a specific token for each user. Your application can then
 use that token to communicate with the Facebook APIs on the user's behalf. When writing a Swift application
-for iOS 11, there are two ways simple ways to do this:
+for iOS 11, there are two ways to do this:
 
 1. Use the [Official Facebook Swift SDK](https://developers.facebook.com/docs/swift/)
 2. Use [SFAuthenticationSession](https://developer.apple.com/documentation/safariservices/sfauthenticationsession)
@@ -101,13 +101,15 @@ extension URL {
 }
 {% endhighlight %}
 
-Let's go over this in more detail. When Facebook calls your redirect URL, they call it with a few
-fragement parameters. For example, the URL may be called like this: `fb470209193334943://authorize#access_token=9999`.
-In order to more easily extract the value of the `access_token` parameter, we use this function.
+Let's go over this in more detail. After a user authenticates with Facebook, Facebook calls a redirect URL that you specifiy
+in order to redirect the user back to your application. When the URL is called, Facebook adds a few
+fragement parameters. For example, if your redirect URL is `fb470209193334943://authorize`,
+then the URL may be called like this: `fb470209193334943://authorize#access_token=9999`.
+In order to more easily extract the value of the `access_token` parameter, we use the function above.
 
 In the `getFragementParam()` function above, we first take the `fragement` of the URL and seperate it by the
 character `&`. Then, we iterate over each of these strings (which look like `key=value`) and seperate them by
-the character `=`. The `value` parameter has two members, at index 0 is the key and at index 1 is the value.
+the character `=`. The `value` variable has two members, at index 0 is the key and at index 1 is the value.
 So after we get those split, we can simply check to see if `value[0]` is the fragement parameter that we are
 looking for, and if so, return `value[1]`.
 
@@ -163,7 +165,7 @@ that URL is called in the browser.
 
 Next, we create our `SFAuthenticationSession` object. We pass in the two URLs we defined. The `url` parameter is the
 one to show to the user, and the `callbackURLScheme` is the redirect URL. We also define a closure that will be called
-when the `SFAuthenticationSession` completes (the redirect URL is called).
+when the `SFAuthenticationSession` completes (when either the redirect URL is called or the user cancels).
 
 In the closure, we first check for any errors (for example, if the user canceled at any point) and return if we find those
 errors. Then, we use our helper function to get the access token from the URL that Facebook called. Remember, Facebook
