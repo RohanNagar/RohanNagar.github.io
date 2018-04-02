@@ -5,7 +5,7 @@ permalink:      /:year-:month-:day/:title
 title:          Rohan Nagar
 paginate:       5
 baseurl:        ""
-url:            "https://rohannagar.github.io/"
+url:            "https://rohannagar.github.io"
 
 # Assets
 sass:
@@ -21,7 +21,7 @@ author:
   url:          https://rohannagar.github.io
   email:        rohannagar11@gmail.com
 
-# Custom vars
+# Template information
 version:        3.4.1
 github:
   repo:         https://github.com/chesterhow/tale
@@ -29,3 +29,4 @@ github:
 # Gems
 plugins:
   - jekyll-paginate
+
