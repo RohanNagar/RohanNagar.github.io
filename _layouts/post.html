@@ -8,9 +8,9 @@ layout: default
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
       <br>
     {% endif %}
-    {% if page.informational %}
+    {% unless page.informational %}
       {% include read_time.html %}
-    {% endif %}
+    {% endunless %}
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
@@ -33,9 +33,11 @@ layout: default
   </br>
 </div>
 
-<script src="https://utteranc.es/client.js"
-        repo="RohanNagar/rohannagar.github.io"
-        issue-term="title"
-        async>
-</script>
+{% unless page.informational %}
+  <script src="https://utteranc.es/client.js"
+          repo="RohanNagar/rohannagar.github.io"
+          issue-term="title"
+          async>
+  </script>
+{% endunless %}
 

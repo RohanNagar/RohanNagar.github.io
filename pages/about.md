@@ -2,7 +2,7 @@
 layout: post
 title: "About"
 author: "Rohan"
-permalink: /about
+permalink: /about/
 informational: true
 ---
 
