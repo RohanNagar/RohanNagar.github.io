@@ -1,8 +1,9 @@
 ---
-layout: informational
+layout: post
 title: "Projects"
 author: "Rohan"
-permalink: /projects/
+permalink: /projects
+informational: true
 ---
 
 <img align="right" src="/assets/img/projects/thunder.png">

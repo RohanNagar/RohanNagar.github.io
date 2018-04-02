@@ -6,9 +6,11 @@ layout: default
   <div class="post-info">
     {% if page.date %}
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
       <br>
-      <div class="post-info">{% include read_time.html %}</div>
+    {% endif %}
+    {% if page.informational %}
+      {% include read_time.html %}
+    {% endif %}
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>

@@ -1,8 +1,9 @@
 ---
-layout: informational
+layout: post
 title: "About"
 author: "Rohan"
-permalink: /about/
+permalink: /about
+informational: true
 ---
 
 The wonderful thing about the internet is that people like me can share ideas freely. This would not have been possible
