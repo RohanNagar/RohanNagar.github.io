@@ -10,9 +10,8 @@ informational: true
 
 # Thunder
 
-[Link to Project](https://www.github.com/RohanNagar/thunder)
-
-Thunder is a REST API that interfaces with a DynamoDB database to provide an easy way to create, update, fetch, and delete users.
+[Thunder](https://www.github.com/RohanNagar/thunder) is a REST API that interfaces with
+a DynamoDB database to provide an easy way to create, update, fetch, and delete users.
 Thunder was built as part of the backend for Pilot, but is currently being enchanced to become generic.
 Soon, Thunder can serve as the user backend for any project and will be fully customizable.
 
@@ -22,9 +21,8 @@ Soon, Thunder can serve as the user backend for any project and will be fully cu
 
 # Lightning
 
-[Link to Project](https://www.github.com/RohanNagar/lightning)
-
-Lightning is another REST API written in Java. Lightning interfaces with social platforms such as Facebook and Twitter in order to enable easy posting of statuses and media.
+[Lightning](https://www.github.com/RohanNagar/lightning) is another REST API written in Java.
+Lightning interfaces with social platforms such as Facebook and Twitter in order to enable easy posting of statuses and media.
 Lightning was built for Pilot, and has the potential to be expanded to include many other social platforms and other methods.
 
 <hr>
@@ -33,8 +31,15 @@ Lightning was built for Pilot, and has the potential to be expanded to include m
 
 # Pilot (iOS)
 
-[Link to Project](https://github.com/SanctionCo/pilot-ios)
-
-Pilot is a social media management application that you can use to upload posts or media to Facebook, Twitter, and more.
+[Pilot](https://www.github.com/SanctionCo/pilot-ios) is a social media management application
+that you can use to upload posts or media to Facebook, Twitter, and more.
 Pilot iOS is still in active development.
 
+<hr>
+
+# Other Open Source Contributions
+
+- [Alamofire](https://github.com/Alamofire/Alamofire/pull/2462)
+- [Dropwizard](https://github.com/dropwizard/dropwizard/pull/2367)
+- [Kubernetes C# Client](https://github.com/kubernetes-client/csharp/pull/107)
+- [Github Explore](https://github.com/github/explore/pull/187)
