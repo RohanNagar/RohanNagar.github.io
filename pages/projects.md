@@ -6,8 +6,6 @@ permalink: /projects/
 informational: true
 ---
 
-<img align="right" src="/assets/img/projects/thunder.png">
-
 # Thunder
 
 [Thunder](https://www.github.com/RohanNagar/thunder) is a REST API that interfaces with
@@ -17,8 +15,6 @@ Soon, Thunder can serve as the user backend for any project and will be fully cu
 
 <hr>
 
-<img align="right" src="/assets/img/projects/lightning.png">
-
 # Lightning
 
 [Lightning](https://www.github.com/RohanNagar/lightning) is another REST API written in Java.
@@ -26,8 +22,6 @@ Lightning interfaces with social platforms such as Facebook and Twitter in order
 Lightning was built for Pilot, and has the potential to be expanded to include many other social platforms and other methods.
 
 <hr>
-
-<img align="right" src="/assets/img/projects/pilot.png">
 
 # Pilot (iOS)
 
