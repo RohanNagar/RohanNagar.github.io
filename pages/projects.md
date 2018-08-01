@@ -36,6 +36,7 @@ Pilot iOS is still in active development.
 - [Alamofire](https://github.com/Alamofire/Alamofire/pull/2462)
 - [Dropwizard](https://github.com/dropwizard/dropwizard/pull/2367)
 - [Github Explore](https://github.com/github/explore/pull/187)
+- [ImgBot](https://github.com/dabutvin/ImgBot/pull/124)
 - Kubernetes C# Client 
 [1](https://github.com/kubernetes-client/csharp/pull/107)
 [2](https://github.com/kubernetes-client/csharp/pull/194)
