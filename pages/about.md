@@ -18,7 +18,7 @@ the fact that my ideas are available for anyone to read is such a miracle.
 
 I guess I should also talk about myself here. I'm a Software Engineer working at Microsoft. I graduated from The University
 of Texas at Austin in May 2017, and joined Microsoft in July 2017. Profesionally, I am passionate about engineering, design,
-and project management. I have a beautiful girlfriend who is a personal trainier and is getting her way in to the marketing
+and project management. I have a beautiful girlfriend who is a personal trainer and is getting her way in to the UX design
 industry. I also very much enjoy gaming, music, cycling, and televison.
 
 You can find me on
