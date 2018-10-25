@@ -79,12 +79,12 @@ That's all the setup there is! Finally, we can do some programming.
 # Write the Code
 
 Before we write the code to handle the OAuth flow, let's add an extension to the `URL` class to make
-our lives easier. Create a new Swift file called `URL+Fragement.swift` and add the following lines:
+our lives easier. Create a new Swift file called `URL+Fragment.swift` and add the following lines:
 
 {% highlight swift  linenos %}
 extension URL {
 
-  func getFragementParam(key: String) -> String? {
+  func getFragmentParam(key: String) -> String? {
     if let params = self.fragment?.components(separatedBy: "&") {
       for param in params {
         if let value = param.components(separatedBy: "=") as [String]? {
@@ -103,14 +103,14 @@ extension URL {
 
 Let's go over this in more detail. After a user authenticates with Facebook, Facebook calls a redirect URL that you specifiy
 in order to redirect the user back to your application. When the URL is called, Facebook adds a few
-fragement parameters. For example, if your redirect URL is `fb470209193334943://authorize`,
+fragment parameters. For example, if your redirect URL is `fb470209193334943://authorize`,
 then the URL may be called like this: `fb470209193334943://authorize#access_token=9999`.
 In order to more easily extract the value of the `access_token` parameter, we use the function above.
 
-In the `getFragementParam()` function above, we first take the `fragement` of the URL and seperate it by the
+In the `getFragmentParam()` function above, we first take the `fragment` of the URL and seperate it by the
 character `&`. Then, we iterate over each of these strings (which look like `key=value`) and seperate them by
 the character `=`. The `value` variable has two members, at index 0 is the key and at index 1 is the value.
-So after we get those split, we can simply check to see if `value[0]` is the fragement parameter that we are
+So after we get those split, we can simply check to see if `value[0]` is the fragment parameter that we are
 looking for, and if so, return `value[1]`.
 
 Now we're ready to write our OAuth code! First, we need to go to the class where we will kick off the OAuth flow
@@ -139,7 +139,7 @@ self.authSession = SFAuthenticationSession(url: authURL, callbackURLScheme: call
       return
     }
 
-    let token = successURL.getFragementParam(key: "access_token")
+    let token = successURL.getFragmentParam(key: "access_token")
 
     // Use your token! Send it to your backend or store it on device
 }
@@ -169,7 +169,7 @@ when the `SFAuthenticationSession` completes (when either the redirect URL is ca
 
 In the closure, we first check for any errors (for example, if the user canceled at any point) and return if we find those
 errors. Then, we use our helper function to get the access token from the URL that Facebook called. Remember, Facebook
-calls our redirect URL with the fragement parameter `access_token`, which is what we look for here. At this point in
+calls our redirect URL with the fragment parameter `access_token`, which is what we look for here. At this point in
 the closure, we will have our token! You can send the token to your backend or do anything you want with it.
 
 Finally, we start the authentication session by calling the `start()` function on the object.
