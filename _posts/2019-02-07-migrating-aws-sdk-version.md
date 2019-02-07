@@ -7,7 +7,7 @@ author: "Rohan Nagar"
 If you write in Java and use [Amazon Web Services (AWS)](https://aws.amazon.com/), you have most likely worked with the AWS SDK
 for Java. For many years, the AWS Java SDK has been version `1.11.x`. However, recently the team at AWS has
 [released version 2](https://aws.amazon.com/blogs/developer/aws-sdk-for-java-2-x-released/) of the AWS Java SDK. This blog post will
-detail the changes I had to make in my application, [Thunder](https://github.com/RohanNagar/thunder) in order to migrate to the latest
+detail the changes I had to make in my application, [Thunder](https://github.com/RohanNagar/thunder), in order to migrate to the latest
 and greatest version of the AWS SDK in order to interact with DynamoDB.
 
 # Update Maven Dependencies
@@ -96,7 +96,7 @@ Item item = new Item()
 {% endhighlight %}
 
 In version 2, table items are represented by a `Map<String, AttributeValue>` object. This can allow for a little more simplicity since
-we are all used to `Map`.
+we are used to how a `Map` works in Java.
 
 {% highlight java  linenos %}
 Map<String, AttributeValue> item = new HashMap<>();
@@ -106,7 +106,7 @@ item.put("creation_time", AttributeValue.builder().n(String.valueOf(now)).build(
 item.put("document", AttributeValue.builder().s(toJson(mapper, user)).build());
 {% endhighlight %}
 
-There is no more specific method for JSON type, simply put another `Map` entry with a `String` `AttributeValue`.
+Note that there is no longer a specific method for adding a JSON attribute. Instead, simply put another `Map` entry with a `String` `AttributeValue`.
 
 Now, to create the item in the table we need to use a `PutItemRequest` instead of directly calling a method that takes in an `Item` object.
 Most of the new APIs in version 2 use the Builder pattern:
@@ -187,6 +187,6 @@ The main things to watch out for are:
 2. Use `Map<String, AttributeValue>` instead of `Item` to represent an item.
 3. Build your requests using the builder pattern and the associated SDK `Request` objects. Include the table name and any conditional write expectations
 in the requests.
-4. Update the exceptions you catch to the [new names](https://docs.aws.amazon.com/sdk-for-java/v2/migration-guide/exception-changes.html).
+4. Update the exceptions you catch to use the [new names](https://docs.aws.amazon.com/sdk-for-java/v2/migration-guide/exception-changes.html).
 
 Feel free to leave any comments or questions down below and I'd be happy to help!
