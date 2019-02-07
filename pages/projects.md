@@ -34,7 +34,6 @@ Pilot iOS is still in active development.
 # Other Open Source Contributions
 
 - [Alamofire](https://github.com/Alamofire/Alamofire/pull/2462)
-- [Dependabot Website](https://github.com/dependabot/website/pull/13)
 - Dropwizard
 [1](https://github.com/dropwizard/dropwizard/pull/2367)
 [2](https://github.com/dropwizard/dropwizard/pull/2456)
