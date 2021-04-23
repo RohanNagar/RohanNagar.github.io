@@ -42,4 +42,4 @@ Pilot iOS is still in active development.
 - Kubernetes C# Client 
 [1](https://github.com/kubernetes-client/csharp/pull/107)
 [2](https://github.com/kubernetes-client/csharp/pull/194)
-- [YNABDoctor](https://github.com/gruberb/YNABDoctor/pull/37)
+- [JOSI](https://github.com/cegredev/josi/pull/2)
