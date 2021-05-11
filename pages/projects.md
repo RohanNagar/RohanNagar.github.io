@@ -43,3 +43,4 @@ Pilot iOS is still in active development.
 [1](https://github.com/kubernetes-client/csharp/pull/107)
 [2](https://github.com/kubernetes-client/csharp/pull/194)
 - [JOSI](https://github.com/cegredev/josi/pull/2)
+- [1Password Connect Go Client](https://github.com/1Password/connect-sdk-go/pull/15)
