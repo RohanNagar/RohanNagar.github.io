@@ -23,11 +23,11 @@ Lightning was built for Pilot, and has the potential to be expanded to include m
 
 <hr>
 
-# Pilot (iOS)
+# JMail
 
-[Pilot](https://www.github.com/SanctionCo/pilot-ios) is a social media management application
-that you can use to upload posts or media to Facebook, Twitter, and more.
-Pilot iOS is still in active development.
+[JMail](https://www.github.com/RohanNagar/jmail) is a modern Java library for validating email addresses. It is faster and more
+correct (based on email RFCs) than other Java validation libraries. I also built a front-end [website](https://www.rohannagar.com/jmail)
+that allows potential users of the library to quicklymtest out the validation algorithm.
 
 <hr>
 
