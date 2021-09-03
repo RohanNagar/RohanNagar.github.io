@@ -44,3 +44,4 @@ that allows potential users of the library to quicklymtest out the validation al
 [2](https://github.com/kubernetes-client/csharp/pull/194)
 - [JOSI](https://github.com/cegredev/josi/pull/2)
 - [1Password Connect Go Client](https://github.com/1Password/connect-sdk-go/pull/15)
+- [Lettuce Core (Java Redis Client)](https://github.com/lettuce-io/lettuce-core/pull/1839)
