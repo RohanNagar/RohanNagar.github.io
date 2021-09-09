@@ -51,3 +51,4 @@ that allows potential users of the library to quicklymtest out the validation al
 - Lettuce Core (Java Redis Client)
   - [Fix ACL SETUSER when adding specified categories](https://github.com/lettuce-io/lettuce-core/pull/1839)
   - [Fix ACL SETUSER when setting noCommands](https://github.com/lettuce-io/lettuce-core/pull/1846)
+  - [Maintain order in AclSetuserArgs](https://github.com/lettuce-io/lettuce-core/pull/1848)
