@@ -48,6 +48,8 @@ that allows potential users of the library to quicklymtest out the validation al
   - [Determine specific versions of Mac OS](https://github.com/cegredev/josi/pull/2)
 - 1Password Connect Go Client
   - [Add API_CREDENTIAL Category](https://github.com/1Password/connect-sdk-go/pull/15)
+- Artillery
+  - [Don't fail capture on false boolean values](https://github.com/artilleryio/artillery/pull/1044)
 - Lettuce Core (Java Redis Client)
   - [Fix ACL SETUSER when adding specified categories](https://github.com/lettuce-io/lettuce-core/pull/1839)
   - [Fix ACL SETUSER when setting noCommands](https://github.com/lettuce-io/lettuce-core/pull/1846)
