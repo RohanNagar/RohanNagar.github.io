@@ -26,7 +26,9 @@ Lightning was built for Pilot, and has the potential to be expanded to include m
 
 [JMail](https://www.github.com/RohanNagar/jmail) is a modern Java library for validating email addresses. It is faster and more
 correct (based on email RFCs) than other Java validation libraries. I also built a front-end [website](https://www.rohannagar.com/jmail)
-that allows potential users of the library to quicklymtest out the validation algorithm.
+that allows potential users of the library to quickly test out the validation algorithm.
+This library is downloaded from Maven Central over 30,000 times per month
+and is used by the popular Email library [simple-java-mail](https://www.simplejavamail.org).
 
 <hr>
 
