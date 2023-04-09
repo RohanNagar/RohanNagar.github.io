@@ -48,6 +48,8 @@ and is used by the popular Email library [simple-java-mail](https://www.simpleja
   - [Move Fractions library inside project](https://github.com/kubernetes-client/csharp/pull/194)
 - JOSI (Java OS Detection Library)
   - [Determine specific versions of Mac OS](https://github.com/cegredev/josi/pull/2)
+- Log-Captor
+  - [Use built-in maven cache during build](https://github.com/Hakky54/log-captor/pull/44)
 - 1Password Connect Go Client
   - [Add API_CREDENTIAL Category](https://github.com/1Password/connect-sdk-go/pull/15)
 - Artillery
